@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Gowun Batang", serif;
+}
+
+body {
+  @apply bg-[#FDFCF8] text-[#2D2D2D] font-sans;
+}
+
+h1, h2, h3 {
+  @apply font-serif;
+}
+
+.card {
+  @apply bg-white rounded-3xl shadow-sm border border-[#E8E4D9] p-6;
+}
+
+.btn-primary {
+  @apply bg-[#5A5A40] text-white rounded-full px-8 py-4 text-xl font-bold shadow-md active:scale-95 transition-all;
+}
+
+.btn-secondary {
+  @apply bg-[#E8E4D9] text-[#5A5A40] rounded-full px-8 py-4 text-xl font-bold active:scale-95 transition-all;
+}
